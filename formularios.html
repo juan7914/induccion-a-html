@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form action="mailto:gusticoseradigital@gmail.com" method="post">
+		<input type="texto" placeholder="Nombre"><!-- el <value="nombre"> no se borra cuando el ususario va a cololar el nombre, por eso se coloca el atributo <placeholder ="Nombre">--><br /><br />
+
+		<input type="texto" placeholder="Nombre" maxlength="10"><!-- este atributo maxlength="" deja escribir el numero de caracteres que el desarrolador coloque en este ejemplo solo 5 caracteres--><br /><br />
+
+		<input type="texto" placeholder="Nombre" maxlength="20" size="50"><!-- este atributo size="" agranda el input o la casilla a los pixeles que se señalen en este caso a 50 pero esto es mejor hacerlo con CSS--><br /><br />
+		<input type="texto" placeholder="Nombre" maxlength="20" size="50" required> <!--este atributo required señala que la casilla no se llena o es obligatorio llenarla--> <br /><br />
+		<input type="submit" value="Enviar" name="enviar"> <!--el atributo name="enviar en este caso sirve para enviar esa informacion a otra data que la veremos en javascrip; si colocamos este otro atributo readonly  lo que sucede esque no nosdeja escribir en el campo donde esta el nombre en este caso y el atributo disabled lo que hace es desabilitar completamente el campo --><br /><br />
+		<label for="Nombre">Tu Nombre</label>
+		<input type="texto" placeholder="Nombre" id="nombre" name="Nombre"><br />
+		<label for="Correo">Tu Correo</label>
+		<input type="email" placeholder="Correo" id="correo"name="correo"><br />
+		<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea><!--el atributo cols="30" rows="10" en este caso sirve para el largo y ancho del cuadro del mensaje pero es mejor hacerlo con CSS--><br />
+		<label for="Pais">Tu Pais</label>
+		<select name="pais" id="pais">
+		        <option value="Colombia">Colombia</option>
+		        <option value="España">España</option>
+		        <option value="Peru">Peru</option>
+
+
+		</select>
+		<br />
+
+		<input type="radio" name="Genero" value="Hombre" id="Hombre"><label for="Hombre">Hombre</label>
+		<input type="radio" name="Genero" value="Mujer" id="Mujer"><label for="Mujer">Mujer</label>
+		<br />
+
+		<input type="checkbox" name="terminos" id="terminos"><label for="terminos">Terminos y condiciones</label>
+
+
+
+		<input type="submit" value="Enviar" name="enviar">
+
+
+	</form> 
+</body>
+</html>
